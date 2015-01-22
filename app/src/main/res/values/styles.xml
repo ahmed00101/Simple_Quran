@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+    </style>
+
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="quranButton">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <!--<item name="android:background">#DD221212</item>-->
+        <!--<item name="android:color">#DDFFFFFF</item>-->
+        <item name="android:textColor">#DDFFFFFF</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+
+        <item name="android:background">@drawable/quran_button</item>
+
+    </style>
+
+
+    <style name="ayaAr">
+        <item name="android:color">#FFDDDDDD</item>
+
+    </style>
+
+
+
+
+
+</resources>

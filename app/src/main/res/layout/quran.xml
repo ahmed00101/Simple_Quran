@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyActivity"
+    android:background="#ffffffff"
+    android:clickable="false"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:background="#0000"
+        android:id="@+id/Snd">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_margin="5dp"
+            android:alpha="0.75"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/menuBar"
+            android:translationZ="10dp">
+
+            <Button
+                style="@style/quranButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="\uf137"
+                android:id="@+id/suraNext"
+                android:gravity="center|right"
+                android:textColor="#FFFFFFFF"
+                android:layout_alignParentLeft="true" />
+
+            <Button
+                style="@style/quranButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/fontPlus"
+                android:gravity="center|right"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/suraNext"
+                android:text="\uf0fe" />
+
+            <Button
+                style="@style/quranButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="\uf031"
+                android:id="@+id/fontChange"
+                android:layout_toRightOf="@+id/fontPlus" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/suraSelect"
+                android:layout_centerInParent="true"
+                android:textAlignment="gravity"
+                android:spinnerMode="dropdown"
+                android:layout_toLeftOf="@+id/colorMode"
+                android:layout_toRightOf="@+id/fontChange"
+                android:background="@drawable/rounded_corner" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/colorMode"
+                android:layout_weight="0.12"
+                style="@style/quranButton"
+                android:layout_toLeftOf="@+id/fontMinus"
+                android:text="\uf042" />
+
+            <Button
+                style="@style/quranButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/fontMinus"
+                android:layout_alignParentRight="false"
+                android:gravity="fill_horizontal|center_horizontal|clip_horizontal|clip_vertical|fill_vertical"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/suraPrev"
+                android:text="\uf146" />
+
+            <Button
+                style="@style/quranButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/suraPrev"
+                android:gravity="center|left"
+                android:layout_alignParentRight="true"
+                android:text="\uf138" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView"
+            android:foreground="#0000">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/quranMain"
+                android:textIsSelectable="true"
+                android:layout_above="@+id/lightMode"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#ffffffff"
+                android:autoText="false"
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:textColor="#fffdfaf7"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:fadeScrollbars="true"
+                android:overScrollMode="ifContentScrolls"
+                android:fadingEdge="vertical|horizontal"
+                android:fadingEdgeLength="20dp"
+                android:lineSpacingExtra="5dp"
+                android:scrollbars = "vertical"
+                android:gravity="center" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
